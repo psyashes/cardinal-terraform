@@ -1,0 +1,13 @@
+version: '3'
+services:
+  aws:
+    image: amazon/aws-cli
+    volumes:
+      - .:/app/terraform
+    env_file: .env
+  terraform:
+    image: hashicorp/terraform:latest
+    volumes:
+      - .:/app/terraform
+    env_file: .env
+    working_dir: /app/terraform
