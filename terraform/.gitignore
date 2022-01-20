@@ -1,0 +1,7 @@
+.log
+.DS_Store
+.env
+id_rsa
+terraform.tfstate.*.backup
+.terraform
+terraform/plugins
